@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>工程案例 - 智联工业自动化</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          <span>智联工业</span>
+        </a>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">首页</a></li>
+            <li><a href="products.html" class="nav-link">产品中心</a></li>
+            <li><a href="cases.html" class="nav-link active">工程案例</a></li>
+            <li><a href="about.html" class="nav-link">关于我们</a></li>
+            <li><a href="contact.html" class="nav-link">联系我们</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 页面标题区 -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-content">
+          <h1>工程案例</h1>
+          <p>丰富的行业经验，为各领域客户提供专业解决方案</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 案例分类导航 -->
+    <section class="product-filters">
+      <div class="container">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-category="all">
+            全部案例
+          </button>
+          <button class="filter-tab" data-category="automobile">
+            汽车行业
+          </button>
+          <button class="filter-tab" data-category="electronic">
+            电子行业
+          </button>
+          <button class="filter-tab" data-category="food">食品行业</button>
+          <button class="filter-tab" data-category="medicine">医药行业</button>
+          <button class="filter-tab" data-category="logistics">物流仓储</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 案例列表 -->
+    <section class="section case-list">
+      <div class="container">
+        <div class="cases-grid">
+          <!-- 汽车行业案例 -->
+          <div class="card case-card case-card-large" data-category="automobile">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>汽车零部件生产线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某知名汽车零部件企业</span>
+                <span class="case-date">2023年</span>
+              </div>
+              <h3 class="card-title">汽车发动机零部件自动化装配检测线</h3>
+              <p class="card-text">
+                为某知名汽车零部件企业打造的全自动化装配检测线，集成了六轴机器人、视觉检测系统、精密输送系统等先进技术，实现发动机零部件的高效、精准装配和检测。
+              </p>
+              <div class="case-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-value">40%</span>
+                  <span class="highlight-label">生产效率提升</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">99.8%</span>
+                  <span class="highlight-label">产品合格率</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">60%</span>
+                  <span class="highlight-label">人力成本降低</span>
+                </div>
+              </div>
+              <div class="case-tags">
+                <span>汽车行业</span>
+                <span>装配检测</span>
+                <span>机器人应用</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card case-card" data-category="automobile">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>汽车座椅生产线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某汽车座椅制造企业</span>
+                <span class="case-date">2023年</span>
+              </div>
+              <h3 class="card-title">汽车座椅自动化装配线</h3>
+              <p class="card-text">
+                采用多台协作机器人实现汽车座椅的自动化装配，配合AGV小车实现物料自动配送。
+              </p>
+              <div class="case-tags">
+                <span>汽车行业</span>
+                <span>机器人应用</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 电子行业案例 -->
+          <div class="card case-card case-card-large" data-category="electronic">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>电子元件分拣系统</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某电子科技有限公司</span>
+                <span class="case-date">2023年</span>
+              </div>
+              <h3 class="card-title">电子元件智能分拣与外观检测系统</h3>
+              <p class="card-text">
+                采用机器视觉技术和AI算法，实现电子元件的高速精准分拣和外观缺陷检测，大大提高了生产效率和产品质量。
+              </p>
+              <div class="case-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-value">600件/分钟</span>
+                  <span class="highlight-label">分拣速度</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">99.9%</span>
+                  <span class="highlight-label">检测准确率</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">24小时</span>
+                  <span class="highlight-label">连续运行</span>
+                </div>
+              </div>
+              <div class="case-tags">
+                <span>电子行业</span>
+                <span>视觉检测</span>
+                <span>AI应用</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card case-card" data-category="electronic">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>PCB板测试线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某PCB制造企业</span>
+                <span class="case-date">2022年</span>
+              </div>
+              <h3 class="card-title">PCB板自动化测试生产线</h3>
+              <p class="card-text">
+                实现PCB板的自动上下料、功能测试和分类分拣，提高测试效率和准确性。
+              </p>
+              <div class="case-tags">
+                <span>电子行业</span>
+                <span>自动化测试</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 食品行业案例 -->
+          <div class="card case-card case-card-large" data-category="food">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>食品包装流水线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某食品集团有限公司</span>
+                <span class="case-date">2022年</span>
+              </div>
+              <h3 class="card-title">食品包装自动化流水线</h3>
+              <p class="card-text">
+                符合食品卫生标准的自动化包装线，集成了自动装箱、封箱、码垛等功能，采用不锈钢材质和卫生级设计，满足食品生产的严格要求。
+              </p>
+              <div class="case-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-value">120包/分钟</span>
+                  <span class="highlight-label">包装速度</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">IP65</span>
+                  <span class="highlight-label">防护等级</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">304不锈钢</span>
+                  <span class="highlight-label">设备材质</span>
+                </div>
+              </div>
+              <div class="case-tags">
+                <span>食品行业</span>
+                <span>包装自动化</span>
+                <span>卫生级设计</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card case-card" data-category="food">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>饮料灌装线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某饮料生产企业</span>
+                <span class="case-date">2022年</span>
+              </div>
+              <h3 class="card-title">饮料自动化灌装生产线</h3>
+              <p class="card-text">
+                实现饮料的自动灌装、旋盖、贴标、包装一体化生产，符合食品卫生标准。
+              </p>
+              <div class="case-tags">
+                <span>食品行业</span>
+                <span>灌装自动化</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 医药行业案例 -->
+          <div class="card case-card" data-category="medicine">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>药品包装线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某制药企业</span>
+                <span class="case-date">2023年</span>
+              </div>
+              <h3 class="card-title">药品自动化包装与追溯系统</h3>
+              <p class="card-text">
+                符合GMP标准的药品包装线，集成二维码追溯系统，实现药品全生命周期管理。
+              </p>
+              <div class="case-tags">
+                <span>医药行业</span>
+                <span>GMP标准</span>
+                <span>追溯系统</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card case-card" data-category="medicine">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>医疗器材组装线</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某医疗设备制造企业</span>
+                <span class="case-date">2021年</span>
+              </div>
+              <h3 class="card-title">医疗器材精密组装生产线</h3>
+              <p class="card-text">
+                高精度医疗器材自动化组装线，配备视觉检测和力控系统，确保产品质量。
+              </p>
+              <div class="case-tags">
+                <span>医药行业</span>
+                <span>精密组装</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 物流仓储案例 -->
+          <div class="card case-card case-card-large" data-category="logistics">
+            <div class="case-image">
+              <div class="card-image case-placeholder">
+                <span>智能仓储系统</span>
+              </div>
+            </div>
+            <div class="card-content case-info">
+              <div class="case-meta">
+                <span class="case-client">某电商物流企业</span>
+                <span class="case-date">2023年</span>
+              </div>
+              <h3 class="card-title">智能仓储与自动分拣系统</h3>
+              <p class="card-text">
+                为电商物流企业打造的智能仓储系统，集成了AGV机器人、立体货架、高速分拣机等设备，实现货物的自动存储、搬运和分拣。
+              </p>
+              <div class="case-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-value">10000+</span>
+                  <span class="highlight-label">SKU管理</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">20000件/天</span>
+                  <span class="highlight-label">处理能力</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-value">99.9%</span>
+                  <span class="highlight-label">分拣准确率</span>
+                </div>
+              </div>
+              <div class="case-tags">
+                <span>物流仓储</span>
+                <span>AGV机器人</span>
+                <span>智能仓储</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>想了解更多成功案例？</h2>
+          <p>联系我们获取更多行业解决方案和成功案例</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">立即咨询</a>
+            <a href="tel:400-888-8888" class="btn btn-secondary"
+              >400-888-8888</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <span class="logo-icon">ZL</span>
+              <span class="logo-text">智联工业</span>
+            </div>
+            <p class="footer-desc">
+              专业工业自动化设备供应商，为制造业提供高效、智能、可靠的解决方案。
+            </p>
+            <div class="footer-contact">
+              <p>电话：400-888-8888</p>
+              <p>邮箱：sales@zhilian-industry.com</p>
+              <p>地址：江苏省苏州市工业园区xxx路xxx号</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>产品中心</h4>
+            <ul>
+              <li><a href="products.html">工业机器人</a></li>
+              <li><a href="products.html">智能输送线</a></li>
+              <li><a href="products.html">视觉检测系统</a></li>
+              <li><a href="products.html">PLC控制系统</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>服务支持</h4>
+            <ul>
+              <li><a href="cases.html">工程案例</a></li>
+              <li><a href="about.html">技术团队</a></li>
+              <li><a href="contact.html">售后服务</a></li>
+              <li><a href="contact.html">在线咨询</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>关于我们</h4>
+            <ul>
+              <li><a href="about.html">公司简介</a></li>
+              <li><a href="about.html">发展历程</a></li>
+              <li><a href="about.html">荣誉资质</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 智联工业自动化科技有限公司 版权所有</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
